@@ -25,6 +25,25 @@ namespace NatchapholAunjai
             SceneManager.UnloadSceneAsync("Options");
         }
 
+        public void LoadPauseMenu()
+        {
+            SceneManager.LoadScene("Pause", LoadSceneMode.Additive);
+        }
+
+        public void ClosePauseMenu()
+        {
+            Time.timeScale = 1f;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.isPaused = false;
+            }
+
+            SceneManager.UnloadSceneAsync("Pause");
+        }
+
         public void LoadCredits()
         {
             SceneManager.LoadScene("Credits");
@@ -62,11 +81,15 @@ namespace NatchapholAunjai
         // 5. Gameplay Screens (Stage 1 & Stage 2) Logic
         public void WinGame()
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SceneManager.LoadScene("Win");
         }
 
         public void LoseGame()
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SceneManager.LoadScene("Game Over");
         }
 

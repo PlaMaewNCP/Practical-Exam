@@ -8,6 +8,7 @@ namespace NatchapholAunjai
     {
         public float moveSpeed = 5f;
         public float gravity = -9.81f;
+        public float mouseSensitivity = 10f;
         
         private CharacterController controller;
         private Vector3 velocity;
@@ -15,19 +16,19 @@ namespace NatchapholAunjai
         private void Start()
         {
             controller = GetComponent<CharacterController>();
+            
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 
         private void Update()
         {
-            // Note: Since you are using the new Input System (InputSystemUIInputModule), 
-            // standard Input.GetAxis might not work unless Input Handling is set to "Both".
-            // To ensure it works out of the box in an exam setting where both might be enabled, 
-            // we use legacy Input. If it fails, the project must have "Both" enabled in PlayerSettings.
+            if (Time.timeScale == 0) return; // Don't move or rotate while paused
+
+            // Movement Input
             float x = 0f;
             float z = 0f;
             
-#if ENABLE_INPUT_SYSTEM && !ENABLE_LEGACY_INPUT_MANAGER
-            // Basic fallback for new input system if legacy is completely disabled
             if (UnityEngine.InputSystem.Keyboard.current != null)
             {
                 if (UnityEngine.InputSystem.Keyboard.current.wKey.isPressed || UnityEngine.InputSystem.Keyboard.current.upArrowKey.isPressed) z += 1f;
@@ -35,20 +36,25 @@ namespace NatchapholAunjai
                 if (UnityEngine.InputSystem.Keyboard.current.aKey.isPressed || UnityEngine.InputSystem.Keyboard.current.leftArrowKey.isPressed) x -= 1f;
                 if (UnityEngine.InputSystem.Keyboard.current.dKey.isPressed || UnityEngine.InputSystem.Keyboard.current.rightArrowKey.isPressed) x += 1f;
             }
-#else
-            x = Input.GetAxis("Horizontal");
-            z = Input.GetAxis("Vertical");
-#endif
 
+            // Mouse Look
+            if (UnityEngine.InputSystem.Mouse.current != null)
+            {
+                Vector2 mouseDelta = UnityEngine.InputSystem.Mouse.current.delta.ReadValue();
+                transform.Rotate(Vector3.up * mouseDelta.x * mouseSensitivity * Time.deltaTime);
+            }
+
+            // Strafing Movement relative to player's rotation
             Vector3 move = transform.right * x + transform.forward * z;
             controller.Move(move * moveSpeed * Time.deltaTime);
 
+            // Gravity
             if (controller.isGrounded && velocity.y < 0)
             {
                 velocity.y = -2f;
             }
 
-            velocity.y += gravity * Time.deltaTime;
+            velocity.y += Physics.gravity.y * Time.deltaTime;
             controller.Move(velocity * Time.deltaTime);
         }
 
@@ -56,10 +62,16 @@ namespace NatchapholAunjai
         {
             if (other.CompareTag("DeathZone"))
             {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 SceneManager.LoadScene("Game Over");
             }
             else if (other.CompareTag("Item"))
             {
+                if (GameManager.Instance != null)
+                {
+                    GameManager.Instance.AddScore(1);
+                }
                 Destroy(other.gameObject);
             }
         }
