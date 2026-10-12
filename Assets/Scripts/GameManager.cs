@@ -12,12 +12,14 @@ namespace NatchapholAunjai
         public Text scoreText;
         
         [Header("Game Settings")]
-        public float timeLimit = 60f; // 60 seconds to complete
-        public int scoreToWin = 3;    // Collect 3 items to win
+        public float timeLimit = 30f; // Exactly 30 seconds countdown
+        public int winScoreThreshold = 10000; // Requires 10,000 points to win
         
         private float currentTime;
-        private int currentScore;
+        private int currentScore = 0;
         private bool isGameOver = false;
+
+        public bool isPaused = false;
 
         private void Awake()
         {
@@ -32,7 +34,7 @@ namespace NatchapholAunjai
             currentTime = timeLimit;
             currentScore = 0;
             
-            // Auto-find texts if they are not assigned
+            // Auto-find texts if they are not assigned in Inspector
             if (timerText == null)
             {
                 GameObject tGo = GameObject.Find("TimerText");
@@ -47,12 +49,11 @@ namespace NatchapholAunjai
             UpdateHUD();
         }
 
-        public bool isPaused = false;
-
         private void Update()
         {
             if (isGameOver) return;
 
+            // Pause toggle with Tab key (New Input System)
             if (UnityEngine.InputSystem.Keyboard.current != null && UnityEngine.InputSystem.Keyboard.current.tabKey.wasPressedThisFrame)
             {
                 Debug.Log("Tab Pressed");
@@ -62,13 +63,14 @@ namespace NatchapholAunjai
                     PauseGame();
             }
 
+            // Countdown timer: only ticks when unpaused
             if (!isPaused)
             {
                 currentTime -= Time.deltaTime;
                 if (currentTime <= 0)
                 {
                     currentTime = 0;
-                    LoseGame();
+                    EvaluateEndGame();
                 }
                 
                 UpdateHUD();
@@ -93,18 +95,25 @@ namespace NatchapholAunjai
             SceneManager.UnloadSceneAsync("Pause");
         }
 
-
         public void AddScore(int amount)
         {
             if (isGameOver) return;
 
             currentScore += amount;
             UpdateHUD();
+        }
 
-            if (currentScore >= scoreToWin)
+        public void ModifyTime(float seconds)
+        {
+            if (isGameOver) return;
+
+            currentTime += seconds;
+            if (currentTime <= 0)
             {
-                WinGame();
+                currentTime = 0;
+                EvaluateEndGame();
             }
+            UpdateHUD();
         }
 
         private void UpdateHUD()
@@ -118,24 +127,27 @@ namespace NatchapholAunjai
 
             if (scoreText != null)
             {
-                scoreText.text = "Score: " + currentScore.ToString();
+                scoreText.text = "Score: " + currentScore.ToString("N0"); // Formats as 10,000
             }
         }
 
-        private void WinGame()
+        // Exam Requirement: Game only ends when timer reaches 0.
+        // If score >= 10,000 -> Win.
+        // If score < 10,000 -> Game Over.
+        private void EvaluateEndGame()
         {
             isGameOver = true;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            SceneManager.LoadScene("Win");
-        }
 
-        private void LoseGame()
-        {
-            isGameOver = true;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            SceneManager.LoadScene("Game Over");
+            if (currentScore >= winScoreThreshold)
+            {
+                SceneManager.LoadScene("Win");
+            }
+            else
+            {
+                SceneManager.LoadScene("Game Over");
+            }
         }
     }
 }
