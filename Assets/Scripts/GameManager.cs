@@ -95,12 +95,21 @@ namespace NatchapholAunjai
             SceneManager.UnloadSceneAsync("Pause");
         }
 
+        public int GetScore() => currentScore;
+        public float GetTimeRemaining() => currentTime;
+
         public void AddScore(int amount)
         {
             if (isGameOver) return;
 
             currentScore += amount;
             UpdateHUD();
+
+            // Win condition: if score >= 10,000, trigger win immediately without waiting for timer
+            if (currentScore >= winScoreThreshold)
+            {
+                TriggerWin();
+            }
         }
 
         public void ModifyTime(float seconds)
@@ -131,25 +140,34 @@ namespace NatchapholAunjai
             }
         }
 
-        // Exam Requirement: Game only ends when timer reaches 0.
-        // If score >= 10,000 -> Win.
-        // If score < 10,000 -> Game Over.
-        private void EvaluateEndGame()
+        public void TriggerWin()
         {
+            if (isGameOver) return;
             isGameOver = true;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
 
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayWinSound();
+            }
+            SceneManager.LoadScene("Win");
+        }
+
+        private void EvaluateEndGame()
+        {
+            if (isGameOver) return;
+
             if (currentScore >= winScoreThreshold)
             {
-                if (AudioManager.Instance != null)
-                {
-                    AudioManager.Instance.PlayWinSound();
-                }
-                SceneManager.LoadScene("Win");
+                TriggerWin();
             }
             else
             {
+                isGameOver = true;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+
                 if (AudioManager.Instance != null)
                 {
                     AudioManager.Instance.PlayLoseSound();
