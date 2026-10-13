@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8165358916732933676}
   m_Layer: 0
   m_Name: Item_Type3_ScorePlus
-  m_TagString: Item
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

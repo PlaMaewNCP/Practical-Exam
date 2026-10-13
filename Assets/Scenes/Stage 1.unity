@@ -1429,6 +1429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 45748679}
   - component: {fileID: 45748680}
+  - component: {fileID: 45748681}
   m_Layer: 0
   m_Name: Torch_HighSanctuary
   m_TagString: Untagged
@@ -1516,6 +1517,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &45748681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45748678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!43 &51081396
 Mesh:
   m_ObjectHideFlags: 0
@@ -1924,6 +1954,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 573983622}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -2607,6 +2641,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1534397018}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -2815,6 +2853,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 72089265}
+    - target: {fileID: 3107373184505012201, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3415907616629785632, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -2925,6 +2967,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1746792583}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -4068,6 +4114,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 253926509}
+    - target: {fileID: 3107373184505012201, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3415907616629785632, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -4178,10 +4228,18 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1716716386}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1716716386}
+    - target: {fileID: 8400123149972637524, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 449772685}
     - target: {fileID: 9146116353267376916, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Name
       value: Item_Type3_ScorePlus
@@ -5175,6 +5233,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 147194684}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5423,6 +5485,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1880058379}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5493,6 +5559,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1990205514}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -6465,6 +6535,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 509470151}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -6493,6 +6567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 432424449}
   - component: {fileID: 432424450}
+  - component: {fileID: 432424451}
   m_Layer: 0
   m_Name: Torch_LedgeWest
   m_TagString: Untagged
@@ -6580,6 +6655,48 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &432424451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432424448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
+--- !u!134 &449772685
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!43 &455035450
 Mesh:
   m_ObjectHideFlags: 0
@@ -6770,6 +6887,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2145460482}
+    - target: {fileID: 850936994985026234, guid: 6dc5a60188981b24c8b87132e6d6092c, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5904242751325337508, guid: 6dc5a60188981b24c8b87132e6d6092c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -6880,6 +7001,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 711721359}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -7128,6 +7253,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 249794788}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -9081,6 +9210,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1102420418}
+    - target: {fileID: 7216280192428236032, guid: 55b5f4b04c5938e41ba42c6e58d4a2b8, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7717042262780331824, guid: 55b5f4b04c5938e41ba42c6e58d4a2b8, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -10025,8 +10158,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760250569}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: -6}
+  m_LocalRotation: {x: 0.12684143, y: 0, z: 0, w: 0.99192303}
+  m_LocalPosition: {x: 0, y: 4.5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10447,6 +10580,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1975389463}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -10477,6 +10614,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1830296600}
+    - target: {fileID: 3107373184505012201, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3415907616629785632, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -10547,6 +10688,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 948415542}
+    - target: {fileID: 850936994985026234, guid: 6dc5a60188981b24c8b87132e6d6092c, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5904242751325337508, guid: 6dc5a60188981b24c8b87132e6d6092c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.5
@@ -10617,6 +10762,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 92999631}
+    - target: {fileID: 850936994985026234, guid: 6dc5a60188981b24c8b87132e6d6092c, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5904242751325337508, guid: 6dc5a60188981b24c8b87132e6d6092c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10854,6 +11003,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1761344301}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -12163,37 +12316,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996682942}
   m_CullTransparentMesh: 1
---- !u!1 &1024451582
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1024451583}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1024451583
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024451582}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1025946291
 GameObject:
   m_ObjectHideFlags: 0
@@ -12204,6 +12326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1025946292}
   - component: {fileID: 1025946293}
+  - component: {fileID: 1025946294}
   m_Layer: 0
   m_Name: Torch_BridgeIsland
   m_TagString: Untagged
@@ -12291,6 +12414,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1025946294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025946291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &1036959075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12343,6 +12495,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 25833103}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -13175,6 +13331,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 110395377}
+    - target: {fileID: 3107373184505012201, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3415907616629785632, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -13285,6 +13445,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 51543655}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -13626,6 +13790,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1603026757}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -13696,6 +13864,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1749770777}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -13984,8 +14156,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213450185}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: -6}
+  m_LocalRotation: {x: 0.12684144, y: 0, z: 0, w: 0.99192303}
+  m_LocalPosition: {x: 0, y: 4.5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15115,6 +15287,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1394854627}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -16228,6 +16404,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 6328549}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -16298,6 +16478,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1428435585}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -16326,6 +16510,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1513959538}
   - component: {fileID: 1513959539}
+  - component: {fileID: 1513959540}
   m_Layer: 0
   m_Name: Torch_Entrance
   m_TagString: Untagged
@@ -16413,6 +16598,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1513959540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513959537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!43 &1530112539
 Mesh:
   m_ObjectHideFlags: 0
@@ -17330,6 +17544,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 675844862}
+    - target: {fileID: 7216280192428236032, guid: 55b5f4b04c5938e41ba42c6e58d4a2b8, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7717042262780331824, guid: 55b5f4b04c5938e41ba42c6e58d4a2b8, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -17400,6 +17618,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 369156460}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -17979,6 +18201,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1918815556}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -18227,6 +18453,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1539108251}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -18297,6 +18527,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1813559795}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -18367,6 +18601,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1732722068}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -18397,6 +18635,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 277951958}
+    - target: {fileID: 3107373184505012201, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3415907616629785632, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -18823,6 +19065,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1352054577}
+    - target: {fileID: 3107373184505012201, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3415907616629785632, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -19069,6 +19315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1735393696}
   - component: {fileID: 1735393697}
+  - component: {fileID: 1735393698}
   m_Layer: 0
   m_Name: Torch_LedgeEast
   m_TagString: Untagged
@@ -19156,6 +19403,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1735393698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735393695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!43 &1738571112
 Mesh:
   m_ObjectHideFlags: 0
@@ -21116,6 +21392,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1204009021}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -21500,6 +21780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1874901677}
   - component: {fileID: 1874901678}
+  - component: {fileID: 1874901679}
   m_Layer: 0
   m_Name: Torch_TombChamber
   m_TagString: Untagged
@@ -21587,6 +21868,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1874901679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874901676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!43 &1877371804
 Mesh:
   m_ObjectHideFlags: 0
@@ -22642,6 +22952,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 68262056}
+    - target: {fileID: 3107373184505012201, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3415907616629785632, guid: a72a4ed433f6f144785bca25f9d89f4e, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -23186,6 +23500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NatchapholAunjai.CapsulePlayer
   moveSpeed: 5
+  jumpHeight: 1.5
   gravity: -9.81
   mouseSensitivity: 50
 --- !u!1001 &1974713480
@@ -23240,6 +23555,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1872440588}
+    - target: {fileID: 7216280192428236032, guid: 55b5f4b04c5938e41ba42c6e58d4a2b8, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7717042262780331824, guid: 55b5f4b04c5938e41ba42c6e58d4a2b8, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -23997,6 +24316,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1077132789}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -24067,6 +24390,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2042150378}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -24137,6 +24464,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1586736213}
+    - target: {fileID: 7216280192428236032, guid: 55b5f4b04c5938e41ba42c6e58d4a2b8, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7717042262780331824, guid: 55b5f4b04c5938e41ba42c6e58d4a2b8, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -24498,6 +24829,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 865251950}
+    - target: {fileID: 850936994985026234, guid: 6dc5a60188981b24c8b87132e6d6092c, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5904242751325337508, guid: 6dc5a60188981b24c8b87132e6d6092c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
@@ -25117,6 +25452,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1747068976}
+    - target: {fileID: 3653684205548684572, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
+      propertyPath: m_VersionIndex
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5660771832744470188, guid: d0207545ad1c3d641b921aaa10a0399d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -25502,7 +25841,6 @@ SceneRoots:
   - {fileID: 1129664430}
   - {fileID: 398602323}
   - {fileID: 1952659327}
-  - {fileID: 1024451583}
   - {fileID: 1213450189}
   - {fileID: 1131958984}
   - {fileID: 273471388}

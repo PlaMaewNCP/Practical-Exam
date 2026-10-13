@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2856808449191414006}
   m_Layer: 0
   m_Name: Item_Type1_TimePlus
-  m_TagString: Item
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -74,6 +74,29 @@ namespace NatchapholAunjai
             // Combine horizontal strafing and vertical velocity into a single Move call
             Vector3 totalMovement = (move * moveSpeed) + velocity;
             controller.Move(totalMovement * Time.deltaTime);
+
+            // Contact collection for items in Stage 1
+            CheckItemPickups();
+        }
+
+        private void CheckItemPickups()
+        {
+            if (controller == null) return;
+            Vector3 bottom = transform.position + Vector3.up * controller.radius;
+            Vector3 top = transform.position + Vector3.up * Mathf.Max(controller.radius, controller.height - controller.radius);
+            Collider[] hits = Physics.OverlapCapsule(bottom, top, controller.radius + 0.4f, ~0, QueryTriggerInteraction.Collide);
+            foreach (var hit in hits)
+            {
+                if (hit == null || hit.gameObject == gameObject) continue;
+                if (hit.CompareTag("Item") || hit.CompareTag("Interactable"))
+                {
+                    var item = hit.GetComponent<Item>();
+                    if (item != null && !item.requireInteraction)
+                    {
+                        item.Collect();
+                    }
+                }
+            }
         }
 
         private void OnTriggerEnter(Collider other)
@@ -84,7 +107,7 @@ namespace NatchapholAunjai
                 Cursor.visible = true;
                 SceneManager.LoadScene("Game Over");
             }
-            else if (other.CompareTag("Item"))
+            else if (other.CompareTag("Item") || other.CompareTag("Interactable") || other.GetComponent<Item>() != null)
             {
                 var item = other.GetComponent<Item>();
                 if (item != null)
@@ -94,6 +117,18 @@ namespace NatchapholAunjai
                 else
                 {
                     Destroy(other.gameObject);
+                }
+            }
+        }
+
+        private void OnControllerColliderHit(ControllerColliderHit hit)
+        {
+            if (hit.gameObject.CompareTag("Item") || hit.gameObject.CompareTag("Interactable"))
+            {
+                var item = hit.gameObject.GetComponent<Item>();
+                if (item != null)
+                {
+                    item.Collect();
                 }
             }
         }

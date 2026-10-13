@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 344014844}
   - component: {fileID: 344014843}
   - component: {fileID: 344014842}
+  - component: {fileID: 344014845}
   m_Layer: 0
   m_Name: BlockerPanel
   m_TagString: Untagged
@@ -477,6 +478,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344014840}
   m_CullTransparentMesh: 1
+--- !u!114 &344014845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344014840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3075d3fb7469049bd2ee728382d30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NatchapholAunjai.UIButtonSound
 --- !u!1 &410156918
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +573,7 @@ GameObject:
   - component: {fileID: 588207756}
   - component: {fileID: 588207758}
   - component: {fileID: 588207757}
+  - component: {fileID: 588207759}
   m_Layer: 0
   m_Name: OptionsPanel
   m_TagString: Untagged
@@ -630,6 +644,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588207755}
   m_CullTransparentMesh: 1
+--- !u!114 &588207759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588207755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ad72287319872341839af8277c54e9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NatchapholAunjai.OptionsMenuUI
+  bgmSlider: {fileID: 1182163326}
+  sfxSlider: {fileID: 1192900498}
 --- !u!1 &648417340
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,6 +820,7 @@ GameObject:
   - component: {fileID: 776576213}
   - component: {fileID: 776576212}
   - component: {fileID: 776576211}
+  - component: {fileID: 776576214}
   m_Layer: 0
   m_Name: OKButton
   m_TagString: Untagged
@@ -913,6 +942,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776576209}
   m_CullTransparentMesh: 1
+--- !u!114 &776576214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776576209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3075d3fb7469049bd2ee728382d30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NatchapholAunjai.UIButtonSound
 --- !u!1 &912051137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,13 +1251,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 247623008}
   m_HandleRect: {fileID: 1210103665}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.75
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 588207759}
+        m_TargetAssemblyTypeName: NatchapholAunjai.OptionsMenuUI, Assembly-CSharp
+        m_MethodName: OnBGMChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1192900496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,13 +1353,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 648417341}
   m_HandleRect: {fileID: 755759561}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.75
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 588207759}
+        m_TargetAssemblyTypeName: NatchapholAunjai.OptionsMenuUI, Assembly-CSharp
+        m_MethodName: OnSFXChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1210103664
 GameObject:
   m_ObjectHideFlags: 0

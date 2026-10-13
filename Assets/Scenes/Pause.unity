@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 231288812}
   - component: {fileID: 231288811}
   - component: {fileID: 231288810}
+  - component: {fileID: 231288813}
   m_Layer: 0
   m_Name: LoseButton
   m_TagString: Untagged
@@ -252,6 +253,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231288808}
   m_CullTransparentMesh: 1
+--- !u!114 &231288813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231288808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3075d3fb7469049bd2ee728382d30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NatchapholAunjai.UIButtonSound
 --- !u!1 &295928549
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,6 +277,7 @@ GameObject:
   - component: {fileID: 295928553}
   - component: {fileID: 295928552}
   - component: {fileID: 295928551}
+  - component: {fileID: 295928554}
   m_Layer: 0
   m_Name: OptionsButton
   m_TagString: Untagged
@@ -385,6 +399,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295928549}
   m_CullTransparentMesh: 1
+--- !u!114 &295928554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295928549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3075d3fb7469049bd2ee728382d30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NatchapholAunjai.UIButtonSound
 --- !u!1 &317772912
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,6 +964,7 @@ GameObject:
   - component: {fileID: 2043206718}
   - component: {fileID: 2043206717}
   - component: {fileID: 2043206716}
+  - component: {fileID: 2043206719}
   m_Layer: 0
   m_Name: WinButton
   m_TagString: Untagged
@@ -1059,6 +1086,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043206714}
   m_CullTransparentMesh: 1
+--- !u!114 &2043206719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043206714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3075d3fb7469049bd2ee728382d30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NatchapholAunjai.UIButtonSound
 --- !u!1 &2051680683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1110,7 @@ GameObject:
   - component: {fileID: 2051680687}
   - component: {fileID: 2051680686}
   - component: {fileID: 2051680685}
+  - component: {fileID: 2051680688}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -1180,6 +1220,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051680683}
   m_CullTransparentMesh: 1
+--- !u!114 &2051680688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051680683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3075d3fb7469049bd2ee728382d30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NatchapholAunjai.UIButtonSound
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

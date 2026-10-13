@@ -710,6 +710,7 @@ GameObject:
   - component: {fileID: 1849594094}
   - component: {fileID: 1849594093}
   - component: {fileID: 1849594092}
+  - component: {fileID: 1849594095}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -831,6 +832,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849594090}
   m_CullTransparentMesh: 1
+--- !u!114 &1849594095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849594090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3075d3fb7469049bd2ee728382d30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NatchapholAunjai.UIButtonSound
 --- !u!1 &1963685192
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,6 +856,7 @@ GameObject:
   - component: {fileID: 1963685196}
   - component: {fileID: 1963685195}
   - component: {fileID: 1963685194}
+  - component: {fileID: 1963685197}
   m_Layer: 0
   m_Name: TryAgainButton
   m_TagString: Untagged
@@ -964,6 +978,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963685192}
   m_CullTransparentMesh: 1
+--- !u!114 &1963685197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963685192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3075d3fb7469049bd2ee728382d30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NatchapholAunjai.UIButtonSound
 --- !u!1 &1985248871
 GameObject:
   m_ObjectHideFlags: 0

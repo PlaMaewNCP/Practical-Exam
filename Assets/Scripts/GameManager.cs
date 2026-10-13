@@ -142,10 +142,18 @@ namespace NatchapholAunjai
 
             if (currentScore >= winScoreThreshold)
             {
+                if (AudioManager.Instance != null)
+                {
+                    AudioManager.Instance.PlayWinSound();
+                }
                 SceneManager.LoadScene("Win");
             }
             else
             {
+                if (AudioManager.Instance != null)
+                {
+                    AudioManager.Instance.PlayLoseSound();
+                }
                 SceneManager.LoadScene("Game Over");
             }
         }

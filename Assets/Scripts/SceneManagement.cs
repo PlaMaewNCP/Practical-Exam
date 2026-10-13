@@ -83,6 +83,10 @@ namespace NatchapholAunjai
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayWinSound();
+            }
             SceneManager.LoadScene("Win");
         }
 
@@ -90,6 +94,10 @@ namespace NatchapholAunjai
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlayLoseSound();
+            }
             SceneManager.LoadScene("Game Over");
         }
 
@@ -118,6 +126,23 @@ namespace NatchapholAunjai
         public void ReturnToMainMenu()
         {
             SceneManager.LoadScene("Main Menu");
+        }
+
+        // Volume control hooks for UI Sliders (if wired via SceneManagement)
+        public void SetBGMVolume(float val)
+        {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.SetBGMVolume(val);
+            }
+        }
+
+        public void SetSFXVolume(float val)
+        {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.SetSFXVolume(val);
+            }
         }
     }
 }

@@ -692,6 +692,7 @@ GameObject:
   - component: {fileID: 998978943}
   - component: {fileID: 998978942}
   - component: {fileID: 998978941}
+  - component: {fileID: 998978944}
   m_Layer: 0
   m_Name: Stage1Button
   m_TagString: Untagged
@@ -813,6 +814,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998978939}
   m_CullTransparentMesh: 1
+--- !u!114 &998978944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998978939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3075d3fb7469049bd2ee728382d30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NatchapholAunjai.UIButtonSound
 --- !u!1 &1043746243
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,6 +838,7 @@ GameObject:
   - component: {fileID: 1043746247}
   - component: {fileID: 1043746246}
   - component: {fileID: 1043746245}
+  - component: {fileID: 1043746248}
   m_Layer: 0
   m_Name: Stage2Button
   m_TagString: Untagged
@@ -946,6 +960,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043746243}
   m_CullTransparentMesh: 1
+--- !u!114 &1043746248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043746243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3075d3fb7469049bd2ee728382d30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NatchapholAunjai.UIButtonSound
 --- !u!1 &1129664428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,6 +1028,7 @@ GameObject:
   - component: {fileID: 1170287078}
   - component: {fileID: 1170287077}
   - component: {fileID: 1170287076}
+  - component: {fileID: 1170287079}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -1123,6 +1150,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170287074}
   m_CullTransparentMesh: 1
+--- !u!114 &1170287079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170287074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3075d3fb7469049bd2ee728382d30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NatchapholAunjai.UIButtonSound
 --- !u!1 &1899434028
 GameObject:
   m_ObjectHideFlags: 0
